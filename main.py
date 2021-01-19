@@ -32,10 +32,8 @@ def bytes2json(data_bytes):
 
 
 def send_alert(data):
-    url = 'https://oapi.dingtalk.com/robot/send?access_token=dd7d1e614b4c852c17deac7d282e1825aa2ea8d3f16d712d9fb6cc3568a193c5' 
-    #print "alert:", data['alerts']
+    url = 'https://oapi.dingtalk.com/robot/send?access_token=xxx'  #钉钉webhook token
     for output in data['alerts'][:]:
-        #print "output:", output
         send_data = {
             "msgtype": "markdown",
             "markdown": {
